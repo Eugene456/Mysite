@@ -7,127 +7,133 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class = "header">
+    <div class = "header">
         <ul>
-            <li class = "header__enter">Вход</li>
-            <li class = "header__favorite">Избранное</li>
-            <li class = "header__comparison">Сравнение</li>
+            <li class = "header__item1"><a href="#" class="header__link1">Вход</a></li>
+            <li class = "header__item2"><a href="#" class="header__link2">Избранное</a></li>
+            <li class = "header__item3"><a href="#" class="header__link3">Сравнение</a></li>
         </ul>
-        <a href="" class="vk"><img src="#" alt="VK"></a>
-        <a href="" class="fb"><img src="#" alt="FB"></a>
-        <a href="" class="twitt"><img src="#" alt=Twitter></a>
-    </header>
+        <a href="#" class="vk"><img src="#" alt="VK" title="Вконтакте"></a>
+        <a href="#" class="fb"><img src="#" alt="FB" title="Фейсбук"></a>
+        <a href="#" class="twitt"><img src="#" alt=Twitter title="Твиттер"></a>
+    </div>
     <header class="header-logo">
-        <a href="#" class="header-logo__link"><img src="#" alt="logo" class="header-logo__img"><h1 class="header-logo__name">TACHKI.COM</h1></a>
+        <a href="#" class="header-logo__link"><img src="#" alt="logo" class="header-logo__img"></a>
 
-        <div>
-            <a href="tel:+88006845594">8 800 684 55 94</a>
-            <a href="mailto:info@gmail.com">info@gmail.com</a>
+        <div class="header-div">
+            <a href="tel:+88006845594" class="header-div__link1">8 800 684 55 94</a>
+            <a href="mailto:info@gmail.com" class="header-div__link2">info@gmail.com</a>
             <form class="search">
                 <input type="search" class="search__input">
                 <button type="submit" class="search__button">Search</button>
             </form>
         </div>
-        <div class="price"><p>7800 руб.</p></div>
+        <div class="price">
+            <output class="price__output">7800 руб.</output>
+            <a href="#" class="price__anchor"> <img src="#" alt="Корзина" class="price__image"></a>
+        </div>
     </header>
     <nav class = "nav">
-        <ul>
-            <li class="nav__main">Главная</li>
-            <li class="nav__catalog">Каталог</li>
-            <li class="nav__galery">Галерея</li>
-            <li class="nav__stock">Акции</li>
-            <li class="nav__contacts">Контакты</li>
+        <ul class="nav__ul">
+            <li class="nav__item1"><a href="#" class="nav__link1">Главная</a></li>
+            <li class="nav__item2"><a href="#" class="nav__link2">Каталог</a></li>
+            <li class="nav__item3"><a href="#" class="nav__link3">Галерея</a></li>
+            <li class="nav__item4"><a href="#" class="nav__link4">Акции</a></li>
+            <li class="nav__item5"><a href="#" class="nav__link5">Контакты</a></li>
         </ul>
     </nav>
     <main   class = "main">
         <div class = "slider"></div>
         <div>
-            <article class="sale"><h3>Продажа</h3></article>
-            <article class="discounts"><h3>Скидки</h3></article>
-            <article class="article-stock"><h3>Акции</h3></article>
+            <article class="sale"><h2>Продажа</h2></article>
+            <article class="discounts"><h2>Скидки</h2></article>
+            <article class="article-stock"><h2>Акции</h2></article>
         </div>
         <section class="news">
             <h2 class="news__headline">Новинки</h2>
-            <article class="products">
+            <figure class="products">
                 <img src="#" alt="Фото товара" class="products__img">
-                <h3 class="products__name">Назание товара</h3>
-                <p class="products__discription">Описание товара</p>
-            </article>
-            <article class="products">
+                <span class="products__name">Назание товара</span>
+                <figcaption class="products__discription">Описание товара</figcaption>
+            </figure>
+            <figure class="products">
                 <img src="#" alt="Фото товара" class="products__img">
-                <h3 class="products__name">Назание товара</h3>
-                <p class="products__discription">Описание товара</p>
-            </article>
-            <article class="products">
+                <span class="products__name">Назание товара</span>
+                <figcaption class="products__discription">Описание товара</figcaption>
+            </figure>
+            <figure class="products">
             <img src="#" alt="Фото товара" class="products__img">
-            <h3 class="products__name">Назание товара</h3>
-            <p class="products__discription">Описание товара</p>
-        </article> 
-        <article class="products">
+            <span class="products__name">Назание товара</span>
+            <figcaption class="products__discription">Описание товара</figcaption>
+        </figure>
+        <figure class="products">
             <img src="#" alt="Фото товара" class="products__img">
-            <h3 class="products__name">Назание товара</h3>
-            <p class="products__discription">Описание товара</p>
-        </article>
+            <span class="products__name">Назание товара</span>
+            <figcaption class="products__discription">Описание товара</figcaption>
+        </figure>
         </section>
         <section class="products-discount">
             <h2 class="products-discount__hedline">Товары со скидкой</h2>
-            <article class="products">
+            <figure class="products">
                 <img src="#" alt="Фото товара" class="products__img">
-                <h3 class="products__name">Назание товара</h3>
-                <p class="products__discription">Описание товара</p>
-            </article>
-            <article class="products">
+                <span class="products__name">Назание товара</span>
+                <figcaption class="products__discription">Описание товара</figcaption>
+            </figure>
+            <figure class="products">
             <img src="#" alt="Фото товара" class="products__img">
-            <h3 class="products__name">Назание товара</h3>
-            <p class="products__discription">Описание товара</p>
-        </article>
-            <article class="products">
+            <span class="products__name">Назание товара</span>
+            <figcaption class="products__discription">Описание товара</figcaption>
+        </figure>
+            <figure class="products">
                 <img src="#" alt="Фото товара" class="products__img">
-                <h3 class="products__name">Назание товара</h3>
-                <p class="products__discription">Описание товара</p>
-            </article>
-            <article class="products">
+                <span class="products__name">Назание товара</span>
+                <figcaption class="products__discription">Описание товара</figcaption>
+            </figure>
+            <figure class="products">
                 <img src="#" alt="Фото товара" class="products__img">
-                <h3 class="products__name">Назание товара</h3>
-                <p class="products__discription">Описание товара</p>
-            </article>
+                <span class="products__name">Назание товара</span>
+                <figcaption class="products__discription">Описание товара</figcaption>
+            </figure>
         </section>
     </main>
     <aside class="category">
         <h2 class="category__headline">Категории</h2>
         <ul>
-            <li class="category__audi">Ауди</li>
-            <li class="category__peugeot">Пежо</li>
-            <li class="category__renault">Рено</li>
-            <li class="category__opel">Опель</li>
-            <li class="category__porche">Порше</li>
-            <li class="category__bmw">БМВ</li>
-            <li class="category__mersedes">Мерседес</li>
+            <li class="category__item1"><a href="#" class="category__link1">Ауди</a></li>
+            <li class="category__item2"><a href="#" class="category__link2">Пежо</a></li>
+            <li class="category__item3"><a href="#" class="category__link3">Рено</a></li>
+            <li class="category__item4"><a href="#" class="category__link4">Опель</a></li>
+            <li class="category__item5"><a href="#" class="category__link5">Порше</a></li>
+            <li class="category__item5"><a href="#" class="category__link6">БМВ</a></li>
+            <li class="category__item6"><a href="#" class="category__link7">Мерседес</a></li>
         </ul>
         <img src="#" alt="Реклама" class="banner">
     </aside>
     <footer class="footer">
         <img src="#" alt="Логотип для футера" class="footer__logo">
-        <h2 class="footer__menu">Меню</h2>
+        <div class="footer-div1">Меню</div>
         <ul>
-            <li class="footer__main"><a href="#">Главная</a></li>
-            <li class="footer__catalog"><a href="#">Каталог</a></li>
-            <li class="footer__gallery"><a href="#">Галерея</a></li>
-            <li class="footer__stock"><a href="#">Акции</a></li>
-            <li class="footer__contacts"><a href="#">Контакты</a></li>
+            <li class="footer-div1__item1"><a href="#" class="footer-div1__link1">Главная</a></li>
+            <li class="footer-div1__item2"><a href="#" class="footer-div1__link2">Каталог</a></li>
+            <li class="footer-div1__item3"><a href="#" class="footer-div1__link3">Галерея</a></li>
+            <li class="footer-div1__item4"><a href="#" class="footer-div1__link4">Акции</a></li>
+            <li class="footer-div1__item5"><a href="#" class="footer-div1__link5">Контакты</a></li>
         </ul>
-        <h2 class="footer__pay">Способы оплаты</h2>
+        <div class="footer-div2">Способы оплаты</div>
         <ul>
-            <li class="footer__cash"><a href="#">Наличными</a></li>
-            <li class="footer__visa"><a href="#">Visa или Mastercard</a></li>
-            <li class="footer__credit"><a href="#">В кредит</a></li>
+            <li class="footer-div2__item1"><a href="#" class="footer-div2__link1">Наличными</a></li>
+            <li class="footer-div2__item2"><a href="#" class="footer-div2__link2">Visa или Mastercard</a></li>
+            <li class="footer-div2__item3"><a href="#" class="footer-div2__link3">В кредит</a></li>
         </ul>
-        <h2 class="footer__about-us">Контактная информация</h2>
-        <ul>
-            <li class="footer__phone">Телефон: <a href="tel:+88006845594">8 800 684 55 94</a></li>
-            <li class="footer__mail">Электронная почта: <a href="mailto:info@gmail.com">info@gmail.com</a></li>
-            <li class="footer__adress">Адрес: г.Москва ул.Фантастическаая 35</li>
-        </ul>
+        <div class="footer-div3">Контактная информация</div>
+            <address>
+                <p class="footer-div3__adress1">Телефон: <a href="tel:+88006845594" class="footer-div3__link1">8 800 684 55 94</a></p>
+                <p class="footer-div3__adress2">Электронная почта: <a href="mailto:info@gmail.com" class="footer-div3__link2">info@gmail.com</a></p>
+                <p class="footer-div3__adress3">Адрес: г.Москва ул.Фантастическаая 35</p>
+            </address>
+        <div class="copyright">
+            <p class="copyright__paragraph">&copy; tachki.com</p>
+        </div>
         
     </footer>
 </body>
