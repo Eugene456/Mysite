@@ -4,44 +4,60 @@
     <meta charset="UTF-8">
     <title>Интернет магазин</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, srink-to-fit=no, viewport-fit=cover">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media='(max-width=630px)'>
 </head>
-<body>
-    <div class = "header">
-        <ul>
-            <li class = "header__item1"><a href="#" class="header__link1">Вход</a></li>
-            <li class = "header__item2"><a href="#" class="header__link2">Избранное</a></li>
-            <li class = "header__item3"><a href="#" class="header__link3">Сравнение</a></li>
-        </ul>
-        <a href="#" class="vk"><img src="#" alt="VK" title="Вконтакте"></a>
-        <a href="#" class="fb"><img src="#" alt="FB" title="Фейсбук"></a>
-        <a href="#" class="twitt"><img src="#" alt=Twitter title="Твиттер"></a>
-    </div>
-    <header class="header-logo">
-        <a href="#" class="header-logo__link"><img src="#" alt="logo" class="header-logo__img"></a>
+<body class="body">
+    <div class="wraper-header">
+        <div class = "header">
+            <ul class="header__ul">
+                <li class = "header__item"><a href="#" class="header__link header__link_enter">Вход</a></li>
+                <li class = "header__item"><a href="#" class="header__link">Избранное</a></li>
+                <li class = "header__item"><a href="#" class="header__link">Сравнение</a></li>
+            </ul>
+            <a href="#" class="vk"><svg class="vk__img" role="img"><use> xlink:href="desing/icons/vk.svg#vk"</use></svg></a>
+            <a href="#" class="fb"><img src="desing/icons/facebook.svg" alt="FB" title="Фейсбук"></a>
+            <a href="#" class="twitt"><img src="desing/icons/twitter.svg" alt=Twitter title="Твиттер"></a>
 
-        <div class="header-div">
-            <a href="tel:+88006845594" class="header-div__link1">8 800 684 55 94</a>
-            <a href="mailto:info@gmail.com" class="header-div__link2">info@gmail.com</a>
-            <form class="search">
-                <input type="search" class="search__input">
-                <button type="submit" class="search__button">Search</button>
-            </form>
+            <a href="#" class="header-logo__link"><svg class="header-logo__img" role="img"><use> xlink:href="desing/image/logo.svg#logo"</use></svg></a>
         </div>
-        <div class="price">
-            <output class="price__output">7800 руб.</output>
-            <a href="#" class="price__anchor"> <img src="#" alt="Корзина" class="price__image"></a>
+        <div class="header-mobile">
+            <a href="#" class="header-mobile__link"><svg class="header-mobile__img" role="img"><use> xlink:href="desing/image/logo.svg#logo"</use></svg></a>
+            <a href="#" class="header-mobile__anchor"> <svg class="header-mobile__image" role="img"><use> xlink:href="desing/icons/shopping_cart.svg#cart"</use></svg></a>
+            <a href="#" class="header-mobile__search"> <svg class="header-mobile__image" role="img"><use> xlink:href="desing/icons/search.svg#search"</use></svg></a>
+            <button onclick="document.querySelector('.nav-wraper').classList.toggle('show'); document.querySelector('.body').classList.toggle('hidden')" class="button-mob"></button>
         </div>
-    </header>
-    <nav class = "nav">
-        <ul class="nav__ul">
-            <li class="nav__item1"><a href="#" class="nav__link1">Главная</a></li>
-            <li class="nav__item2"><a href="#" class="nav__link2">Каталог</a></li>
-            <li class="nav__item3"><a href="#" class="nav__link3">Галерея</a></li>
-            <li class="nav__item4"><a href="#" class="nav__link4">Акции</a></li>
-            <li class="nav__item5"><a href="#" class="nav__link5">Контакты</a></li>
-        </ul>
-    </nav>
+    </div>
+    <div class="wraper-logo">
+        <header class="header-logo">
+            <a href="#" class="header-logo__link"><svg class="header-logo__img" role="img"><use> xlink:href="desing/image/logo.svg#logo"</use></svg></a>
+
+            <div class="header-div">
+                <a href="tel:+88006845594" class="header-div__link header-div__link_tel">8 800 684 55 94</a>
+                <a href="mailto:info@gmail.com" class="header-div__link header-div__link_mail">info@gmail.com</a>
+                <form class="search">
+                    <input type="search" class="search__input">
+                    <button type="submit" class="search__button" title="Найти"></button>
+                </form>
+            </div>
+            <div class="price">
+                <output class="price__output">7800 руб.</output>
+                <a href="#" class="price__anchor"> <svg class="price__image" role="img"><use> xlink:href="desing/icons/shopping_cart.svg#cart"</use></svg></a>
+            </div>
+            </header>
+    </div>
+    <div class="nav-wraper">
+        <nav class = "nav">
+            <ul class="nav__ul">
+                <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Галерея</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Акции</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
     <main   class = "main">
         <div class = "slider"></div>
         <div>
@@ -99,14 +115,14 @@
     <aside class="category">
         <h2 class="category__headline">Категории</h2>
         <ul>
-            <li class="category__item1"><a href="#" class="category__link1">Ауди</a></li>
-            <li class="category__item2"><a href="#" class="category__link2">Пежо</a></li>
-            <li class="category__item3"><a href="#" class="category__link3">Рено</a></li>
-            <li class="category__item4"><a href="#" class="category__link4">Опель</a></li>
-            <li class="category__item5"><a href="#" class="category__link5">Порше</a></li>
-            <li class="category__item6"><a href="#" class="category__link6">БМВ</a></li>
-            <li class="category__item7"><a href="#" class="category__link7">Мерседес</a></li>
-            <li class="category__item8"><a href="#" class="category__link8">Форд</a></li>
+            <li class="category__item"><a href="#" class="category__link">Ауди</a></li>
+            <li class="category__item"><a href="#" class="category__link">Пежо</a></li>
+            <li class="category__item"><a href="#" class="category__link">Рено</a></li>
+            <li class="category__item"><a href="#" class="category__link">Опель</a></li>
+            <li class="category__item"><a href="#" class="category__link">Порше</a></li>
+            <li class="category__item"><a href="#" class="category__link">БМВ</a></li>
+            <li class="category__item"><a href="#" class="category__link">Мерседес</a></li>
+            <li class="category__item"><a href="#" class="category__link">Форд</a></li>
         </ul>
         <img src="#" alt="Реклама" class="banner">
     </aside>
@@ -114,17 +130,17 @@
         <img src="#" alt="Логотип для футера" class="footer__logo">
         <div class="footer-div1">Меню</div>
         <ul>
-            <li class="footer-div1__item1"><a href="#" class="footer-div1__link1">Главная</a></li>
-            <li class="footer-div1__item2"><a href="#" class="footer-div1__link2">Каталог</a></li>
-            <li class="footer-div1__item3"><a href="#" class="footer-div1__link3">Галерея</a></li>
-            <li class="footer-div1__item4"><a href="#" class="footer-div1__link4">Акции</a></li>
-            <li class="footer-div1__item5"><a href="#" class="footer-div1__link5">Контакты</a></li>
+            <li class="footer-div1__item"><a href="#" class="footer-div1__link">Главная</a></li>
+            <li class="footer-div1__item"><a href="#" class="footer-div1__link">Каталог</a></li>
+            <li class="footer-div1__item"><a href="#" class="footer-div1__link">Галерея</a></li>
+            <li class="footer-div1__item"><a href="#" class="footer-div1__link">Акции</a></li>
+            <li class="footer-div1__item"><a href="#" class="footer-div1__link">Контакты</a></li>
         </ul>
         <div class="footer-div2">Способы оплаты</div>
         <ul>
-            <li class="footer-div2__item1"><a href="#" class="footer-div2__link1">Наличными</a></li>
-            <li class="footer-div2__item2"><a href="#" class="footer-div2__link2">Visa или Mastercard</a></li>
-            <li class="footer-div2__item3"><a href="#" class="footer-div2__link3">В кредит</a></li>
+            <li class="footer-div2__item"><a href="#" class="footer-div__link">Наличными</a></li>
+            <li class="footer-div2__item"><a href="#" class="footer-div__link">Visa или Mastercard</a></li>
+            <li class="footer-div2__item"><a href="#" class="footer-div__link">В кредит</a></li>
         </ul>
         <div class="footer-div3">Контактная информация</div>
             <address>
