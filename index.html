@@ -3,47 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Интернет магазин</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, srink-to-fit=no, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/mobile.css" media='(max-width=630px)'>
+    <link rel="stylesheet"  href="css/mobile.css" media='(max-width:630px)'>
+    <link rel="stylesheet"  href="lib/slick/slick.css">
+    <link rel="stylesheet" href="lib/slick/slick-theme.css">
+    <script defer type="text/javascript" src="lib/jquery.js"></script>
+    <script defer type="text/javascript" src="lib/slick/slick.js"></script>
+    <script defer type="text/javascript" src="script/slider.js"></script>
 </head>
 <body class="body">
     <div class="wraper-header">
         <div class = "header">
             <ul class="header__ul">
                 <li class = "header__item"><a href="#" class="header__link header__link_enter">Вход</a></li>
-                <li class = "header__item"><a href="#" class="header__link">Избранное</a></li>
-                <li class = "header__item"><a href="#" class="header__link">Сравнение</a></li>
+                <li class = "header__item"><a href="#" class="header__link header__link_heart">Избранное</a></li>
+                <li class = "header__item"><a href="#" class="header__link header__link_compare" >Сравнение</a></li>
             </ul>
-            <a href="#" class="vk"><svg class="vk__img" role="img"><use> xlink:href="desing/icons/vk.svg#vk"</use></svg></a>
-            <a href="#" class="fb"><img src="desing/icons/facebook.svg" alt="FB" title="Фейсбук"></a>
-            <a href="#" class="twitt"><img src="desing/icons/twitter.svg" alt=Twitter title="Твиттер"></a>
-
-            <a href="#" class="header-logo__link"><svg class="header-logo__img" role="img"><use> xlink:href="desing/image/logo.svg#logo"</use></svg></a>
+            <div>
+                <a href="#" class="vk"><svg class="vk__img" role="img"><use xlink:href="desing/icons/vk.svg#vk"/></svg></a>
+                <a href="#" class="fb"><svg class="vk__img" role="img"><use xlink:href="desing/icons/facebook.svg#facebook"/></svg></a>
+                <a href="#" class="twitt"><svg class="vk__img" role="img"><use xlink:href="desing/icons/twitter.svg#twitter"/></svg></a>
+            </div>
         </div>
         <div class="header-mobile">
-            <a href="#" class="header-mobile__link"><svg class="header-mobile__img" role="img"><use> xlink:href="desing/image/logo.svg#logo"</use></svg></a>
-            <a href="#" class="header-mobile__anchor"> <svg class="header-mobile__image" role="img"><use> xlink:href="desing/icons/shopping_cart.svg#cart"</use></svg></a>
-            <a href="#" class="header-mobile__search"> <svg class="header-mobile__image" role="img"><use> xlink:href="desing/icons/search.svg#search"</use></svg></a>
+            <a href="#" class="header-mobile__link"><svg class="header-mobile__img" role="img"><use xlink:href="desing/image/logo.svg#logo"/></svg></a>
+            <a href="#" class="header-mobile__anchor"> <svg class="header-mobile__image" role="img"><use xlink:href="desing/icons/shopping_cart.svg#cart"/></a>
+            <a href="#" class="header-mobile__search"> <svg class="header-mobile__image" role="img"><use xlink:href="desing/icons/search.svg#search"/></svg></a>
             <button onclick="document.querySelector('.nav-wraper').classList.toggle('show'); document.querySelector('.body').classList.toggle('hidden')" class="button-mob"></button>
         </div>
     </div>
     <div class="wraper-logo">
         <header class="header-logo">
-            <a href="#" class="header-logo__link"><svg class="header-logo__img" role="img"><use> xlink:href="desing/image/logo.svg#logo"</use></svg></a>
-
+            <a href="#" class="header-logo__link"><svg class="header-logo__img" role="img"><use xlink:href="desing/image/logo.svg#logo"/></svg></a>
             <div class="header-div">
                 <a href="tel:+88006845594" class="header-div__link header-div__link_tel">8 800 684 55 94</a>
                 <a href="mailto:info@gmail.com" class="header-div__link header-div__link_mail">info@gmail.com</a>
                 <form class="search">
                     <input type="search" class="search__input">
-                    <button type="submit" class="search__button" title="Найти"></button>
+                    <button type="submit" class="search__button" title="Найти">
                 </form>
             </div>
+
             <div class="price">
                 <output class="price__output">7800 руб.</output>
-                <a href="#" class="price__anchor"> <svg class="price__image" role="img"><use> xlink:href="desing/icons/shopping_cart.svg#cart"</use></svg></a>
+                <a href="#" class="price__anchor"> <svg class="price__image" role="img"><use xlink:href="desing/icons/shopping_cart.svg#cart"/></svg></a>
             </div>
             </header>
     </div>
@@ -58,32 +63,59 @@
             </ul>
         </nav>
     </div>
-    <main   class = "main">
-        <div class = "slider"></div>
-        <div>
-            <article class="sale"><h2>Продажа</h2></article>
-            <article class="discounts"><h2>Скидки</h2></article>
-            <article class="article-stock"><h2>Акции</h2></article>
+    <div class="contain container">
+    <main class = "main">
+        <div class="container-slide">
+            <div class="slider">
+                <div class="slider__item">
+                    <img src="desing/image/slide-car.png" alt="hot-wheels" class="slider__img">
+                    <div><h2 class="slider__head">HOT WHEELS</h2>
+                    <p class="slider__rows2">НОВАЯ ВЕСЕННЯЯ КОЛЛЕКЦИЯ</p>
+                    <p class="slider__text-content">Мы рады представить вам новую весеннюю коллекцию</p>
+                        <button class="slider__button">купить сейчас</button>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img src="desing/image/slide-car2.png" alt="hot-wheels" class="slider__img">
+                    <div><h2 class="slider__head">HOT WHEELS</h2>
+                        <p class="slider__rows2">НОВАЯ ВЕСЕННЯЯ КОЛЛЕКЦИЯ</p>
+                        <p class="slider__text-content">Мы рады представить вам новую весеннюю коллекцию</p>
+                        <button class="slider__button">купить сейчас</button>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img src="desing/image/slide-car3.png" alt="hot-wheels" class="slider__img">
+                    <div><h2 class="slider__head">HOT WHEELS</h2>
+                        <p class="slider__rows2">НОВАЯ ВЕСЕННЯЯ КОЛЛЕКЦИЯ</p>
+                        <p class="slider__text-content">Мы рады представить вам новую весеннюю коллекцию</p>
+                        <button class="slider__button">купить сейчас</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
+            <article class="article1"><h2>Продажа</h2></article>
+            <article class="article2"><h2>Скидки</h2></article>
+            <article class="article3"><h2>Акции</h2></article>
         <section class="news">
             <h2 class="news__headline">Новинки</h2>
             <figure class="products">
-                <img src="#" alt="Фото товара" class="products__img">
+                <img src="desing/image/car.png" alt="Фото товара" class="products__img">
                 <span class="products__name">Назание товара</span>
                 <figcaption class="products__discription">Описание товара</figcaption>
             </figure>
             <figure class="products">
-                <img src="#" alt="Фото товара" class="products__img">
+                <img src="desing/image/car.png" alt="Фото товара" class="products__img">
                 <span class="products__name">Назание товара</span>
                 <figcaption class="products__discription">Описание товара</figcaption>
             </figure>
             <figure class="products">
-            <img src="#" alt="Фото товара" class="products__img">
+            <img src="desing/image/car.png" alt="Фото товара" class="products__img">
             <span class="products__name">Назание товара</span>
             <figcaption class="products__discription">Описание товара</figcaption>
         </figure>
         <figure class="products">
-            <img src="#" alt="Фото товара" class="products__img">
+            <img src="desing/image/car.png" alt="Фото товара" class="products__img">
             <span class="products__name">Назание товара</span>
             <figcaption class="products__discription">Описание товара</figcaption>
         </figure>
@@ -91,22 +123,22 @@
         <section class="products-discount">
             <h2 class="products-discount__hedline">Товары со скидкой</h2>
             <figure class="products">
-                <img src="#" alt="Фото товара" class="products__img">
+                <img src="desing/image/car.png" alt="Фото товара" class="products__img">
                 <span class="products__name">Назание товара</span>
                 <figcaption class="products__discription">Описание товара</figcaption>
             </figure>
             <figure class="products">
-            <img src="#" alt="Фото товара" class="products__img">
+            <img src="desing/image/car.png" alt="Фото товара" class="products__img">
             <span class="products__name">Назание товара</span>
             <figcaption class="products__discription">Описание товара</figcaption>
         </figure>
             <figure class="products">
-                <img src="#" alt="Фото товара" class="products__img">
+                <img src="desing/image/car.png" alt="Фото товара" class="products__img">
                 <span class="products__name">Назание товара</span>
                 <figcaption class="products__discription">Описание товара</figcaption>
             </figure>
             <figure class="products">
-                <img src="#" alt="Фото товара" class="products__img">
+                <img src="desing/image/car.png" alt="Фото товара" class="products__img">
                 <span class="products__name">Назание товара</span>
                 <figcaption class="products__discription">Описание товара</figcaption>
             </figure>
@@ -114,7 +146,7 @@
     </main>
     <aside class="category">
         <h2 class="category__headline">Категории</h2>
-        <ul>
+        <ul class="ul__category">
             <li class="category__item"><a href="#" class="category__link">Ауди</a></li>
             <li class="category__item"><a href="#" class="category__link">Пежо</a></li>
             <li class="category__item"><a href="#" class="category__link">Рено</a></li>
@@ -124,8 +156,10 @@
             <li class="category__item"><a href="#" class="category__link">Мерседес</a></li>
             <li class="category__item"><a href="#" class="category__link">Форд</a></li>
         </ul>
-        <img src="#" alt="Реклама" class="banner">
+        <img src="desing/image/banner.jpg" alt="Реклама" class="banner">
+        <img src="desing/image/banner2.jpg" alt="Реклама" class="banner">
     </aside>
+    </div>
     <footer class="footer">
         <img src="#" alt="Логотип для футера" class="footer__logo">
         <div class="footer-div1">Меню</div>
