@@ -7,6 +7,11 @@
 .article3, .footer-block_position1,.footer-block_position2{
     display:none;
 }
+.banner_mob{
+    grid-column: 1/-1;
+    display: block;
+    margin: 0 auto;
+}
 .wraper-header{
     background-color:var(--color-background);
 

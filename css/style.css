@@ -45,6 +45,9 @@ html {
     fill: currentColor;
     flex-shrink: 0;
 }
+.banner_mob{
+    display: none;
+}
 /*first row header*/
 .header-mobile{
     display:none;

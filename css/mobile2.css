@@ -1,12 +1,19 @@
-
+.body{
+    min-width: 360px;
+}
 .body.hidden{
     overflow: hidden;
 }
-.header1, .category, .container-slide,.container-logo,
+.header1, category .container-slide,.container-logo,
 .header, .header-logo, .slider, .article1, .article2,
 .article3, .footer-block_position1,.footer-block_position2,
 .article, .products__add_flash{
     display:none;
+}
+.banner_mob{
+    grid-column: 1/-1;
+    display: block;
+    margin: 0 auto;
 }
 .wraper-header{
     background-color:var(--color-background);
