@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet"  href="css/mobile.css" media='(max-width:630px)'>
+    <link rel="stylesheet"  href="css/mobile.css" media='(max-width:740px)'>
+    <link rel="stylesheet"  href="css/mobile2.css" media='(max-width:360px)'>
     <link rel="stylesheet"  href="lib/slick/slick.css">
     <link rel="stylesheet" href="lib/slick/slick-theme.css">
     <script defer  src="lib/jquery.js"></script>
@@ -17,38 +18,111 @@
     <div class="wraper-header">
         <div class = "header">
             <ul class="header__ul">
-                <li class = "header__item"><a href="#" class="header__link header__link_enter">Вход</a></li>
-                <li class = "header__item"><a href="#" class="header__link header__link_heart">Избранное</a></li>
-                <li class = "header__item"><a href="#" class="header__link header__link_compare" >Сравнение</a></li>
+                <li class = "header__item">
+                    <a href="#" class="header__link">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/enter.svg#enter"/>
+                        </svg>
+                        Вход
+                    </a>
+                </li>
+                <li class = "header__item">
+                    <a href="#" class="header__link">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/heart.svg#heart"/>
+                        </svg>
+                        Избранное
+                    </a>
+                </li>
+                <li class = "header__item">
+                    <a href="#" class="header__link header__link_compare">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/compare.svg#compare"/>
+                        </svg>
+                        Сравнение
+                    </a>
+                </li>
             </ul>
-            <div>
-                <a href="#" class="vk"><svg class="vk__img" role="img"><use xlink:href="desing/icons/vk.svg#vk"/></svg></a>
-                <a href="#" class="fb"><svg class="vk__img" role="img"><use xlink:href="desing/icons/facebook.svg#facebook"/></svg></a>
-                <a href="#" class="twitt"><svg class="vk__img" role="img"><use xlink:href="desing/icons/twitter.svg#twitter"/></svg></a>
+            <div class="social">
+                <a href="#" class="social__link">
+                    <svg class="inline-icon social__img">
+                        <use xlink:href="desing/icons/vk.svg#vk"></use>
+                    </svg>
+                </a>
+                <a href="#" class="social__link">
+                    <svg class="inline-icon social__img">
+                        <use xlink:href="desing/icons/facebook.svg#fb"></use>
+                    </svg>
+                </a>
+                <a href="#" class="social__link">
+                    <svg class="inline-icon social__img">
+                        <use xlink:href="desing/icons/twitter.svg#twit"></svg>
+                    </svg>
+                </a>
             </div>
         </div>
         <div class="header-mobile">
-            <a href="#" class="header-mobile__link"><svg class="header-mobile__img" role="img"><use xlink:href="desing/image/logo.svg#logo"></use></svg></a>
-            <a href="#" class="header-mobile__anchor"> <svg class="header-mobile__image" role="img"><use xlink:href="desing/icons/shopping_cart.svg#cart"></use></svg></a>
-            <a href="#" class="header-mobile__search"> <svg class="header-mobile__image" role="img"><use xlink:href="desing/icons/search.svg#search"></use></svg></a>
-            <button onclick="document.querySelector('.nav-wraper').classList.toggle('show'); document.querySelector('.body').classList.toggle('hidden')" class="button-mob"></button>
+            <a href="#" class="mobile__link">
+                <svg class="inline-icon mobile__img">
+                    <use xlink:href="desing/image/car.svg#car"></use>
+                </svg>
+                <span class="mobile__site-name"><p class="header-logo__first-row header-logo__first-row_color ">TACHKI.COM</p> unrealizable dreams</span>
+            </a>
+            <a href="#" class="mobile__link">
+                <svg class="inline-icon mobile__image">
+                    <use xlink:href="desing/icons/shopping_cart.svg#cart"></use>
+                </svg>
+            </a>
+            <a href="#" class="mobile__link">
+                <svg class=" inline-icon mobile__image" >
+                    <use xlink:href="desing/icons/search.svg#search"></use>
+                </svg>
+            </a>
+            <button onclick="document.querySelector('.nav-wraper').classList.toggle('show'); document.querySelector('.body').classList.toggle('hidden')" class="button-mob">
+                <svg class=" inline-icon mobile__image">
+                    <use xlink:href="desing/icons/gamburger.svg#gamb"></use>
+                </svg>
+            </button>
         </div>
     </div>
-    <div class="wraper-logo">
+    <div class="container">
         <header class="header-logo">
-            <a href="#" class="header-logo__link"><svg class="header-logo__img" role="img"><use xlink:href="desing/image/logo.svg#logo"/></svg></a>
+                <a href="#" class="header-logo__link">
+                    <svg class="inline-icon header-logo__img">
+                        <use xlink:href="desing/image/car.svg#car"></use>
+                    </svg>
+                    <span class="header-logo__site-name"><p class="header-logo__first-row">TACHKI.COM</p> unrealizable dreams</span>
+                </a>
             <div class="header-div">
-                <a href="tel:+88006845594" class="header-div__link header-div__link_tel">8 800 684 55 94</a>
-                <a href="mailto:info@gmail.com" class="header-div__link header-div__link_mail">info@gmail.com</a>
+                <a href="tel:+88006845594" class="header-div__link">
+                    <svg class="inline-icon tel-img">
+                        <use xlink:href="desing/icons/phone.svg#phone"></use>
+                    </svg>
+                    8 800 684 55 94
+                </a>
+                <a href="mailto:info@gmail.com" class="header-div__link">
+                    <svg class="inline-icon mail-img">
+                        <use xlink:href="desing/icons/mail.svg#mail"></use>
+                    </svg>
+                    info@gmail.com
+                </a>
                 <form class="search">
                     <input type="search" class="search__input">
-                    <button type="submit" class="search__button" title="Найти"></button>
+                    <button type="submit" class="search__button" title="Найти">
+                        <svg class="inline-icon search__img">
+                            <use xlink:href="desing/icons/search.svg#search"></use>
+                        </svg>
+                    </button>
                 </form>
             </div>
 
             <div class="price">
                 <output class="price__output">7800 руб.</output>
-                <a href="#" class="price__anchor"> <svg class="price__image" role="img"><use xlink:href="desing/icons/shopping_cart.svg#cart"/></svg></a>
+                <a href="#" class="price__anchor" data-count="4">
+                    <svg class="inline-icon price_image">
+                        <use xlink:href="desing/icons/shopping_cart.svg#cart"></use>
+                    </svg>
+                </a>
             </div>
             </header>
     </div>
@@ -94,98 +168,307 @@
             </div>
 
         </div>
-            <article class="article1"><h2>Продажа</h2></article>
-            <article class="article2"><h2>Скидки</h2></article>
-            <article class="article3"><h2>Акции</h2></article>
+            <article class="article article_place1">
+                <a class="article__link article_link-color1" href="#" title="Продажа">
+                    <svg class="inline-icon article__img">
+                        <use xlink:href="desing/icons/credit-card.svg#credit"></use>
+                    </svg>
+                    <h2 class="article__head">Продажа</h2>
+                </a>
+                <p class="article__text">Широкий ассортимент моделей</p>
+            </article>
+            <article class="article article_place2">
+                <a class="article__link article_link-color2" href="#" title="Скидки" >
+                    <svg class="inline-icon article__img">
+                        <use xlink:href="desing/icons/like.svg#like"></use>
+                    </svg>
+                    <h2 class="article__head">Скидки</h2>
+                </a>
+                <p class="article__text">Невообразимо низкие цены</p>
+            </article>
+            <article class="article article_place3">
+                <a class="article__link article_link-color3" href="#" title="Акции">
+                    <svg class="inline-icon article__img">
+                        <use xlink:href="desing/icons/gift.svg#gift"></use>
+                    </svg>
+                    <h2 class="article__head">Акции</h2>
+                </a>
+                <p class="article__text">Неожиданные акции</p>
+            </article>
         <section class="news">
             <h2 class="news__headline">Новинки</h2>
+
             <figure class="products">
+                <span class="products__sale products__sale_new">new</span>
                 <img src="desing/image/car.png" alt="Фото товара" class="products__img">
-                <span class="products__name">Назание товара</span>
-                <figcaption class="products__discription">Описание товара</figcaption>
+                <span class="products__name">HOT WHEELS</span>
+                <figcaption class="products__discription">35 000 р.</figcaption>
+                <form>
+                    <button class="products__add">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/shopping_cart.svg#cart"></use>
+                        </svg>
+                        в корзину
+                    </button>
+                    <button class="products__add products__add_flash">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/lightning.svg#lightning"></use>
+                        </svg>
+                    </button>
+                </form>
             </figure>
             <figure class="products">
+                <span class="products__sale products__sale_new">new</span>
                 <img src="desing/image/car.png" alt="Фото товара" class="products__img">
-                <span class="products__name">Назание товара</span>
-                <figcaption class="products__discription">Описание товара</figcaption>
+                <span class="products__name">HOT WHEELS</span>
+                <figcaption class="products__discription">35 000 р.</figcaption>
+                <form>
+                    <button class="products__add">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/shopping_cart.svg#cart"></use>
+                        </svg>
+                        в корзину
+                    </button>
+                    <button class="products__add products__add_flash">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/lightning.svg#lightning"></use>
+                        </svg>
+                    </button>
+                </form>
             </figure>
             <figure class="products">
-            <img src="desing/image/car.png" alt="Фото товара" class="products__img">
-            <span class="products__name">Назание товара</span>
-            <figcaption class="products__discription">Описание товара</figcaption>
-        </figure>
-        <figure class="products">
-            <img src="desing/image/car.png" alt="Фото товара" class="products__img">
-            <span class="products__name">Назание товара</span>
-            <figcaption class="products__discription">Описание товара</figcaption>
-        </figure>
+                <span class="products__sale products__sale_new">new</span>
+                <img src="desing/image/car.png" alt="Фото товара" class="products__img">
+                <span class="products__name">HOT WHEELS</span>
+                <figcaption class="products__discription">35 000 р.</figcaption>
+                <form>
+                    <button class="products__add">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/shopping_cart.svg#cart"></use>
+                        </svg>
+                        в корзину
+                    </button>
+                    <button class="products__add products__add_flash">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/lightning.svg#lightning"></use>
+                        </svg>
+                    </button>
+                </form>
+            </figure>
+            <figure class="products">
+                <span class="products__sale products__sale_new">new</span>
+                <img src="desing/image/car.png" alt="Фото товара" class="products__img">
+                <span class="products__name">HOT WHEELS</span>
+                <figcaption class="products__discription">35 000 р.</figcaption>
+                <form>
+                    <button class="products__add">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/shopping_cart.svg#cart"></use>
+                        </svg>
+                        в корзину
+                    </button>
+                    <button class="products__add products__add_flash">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/lightning.svg#lightning"></use>
+                        </svg>
+                    </button>
+                </form>
+            </figure>
+
         </section>
-        <section class="products-discount">
-            <h2 class="products-discount__hedline">Товары со скидкой</h2>
+
+        <section class="news">
+            <h2 class="news__headline">Товары со скидкой</h2>
             <figure class="products">
+                <span class="products__sale products__sale_percent">10%</span>
                 <img src="desing/image/car.png" alt="Фото товара" class="products__img">
-                <span class="products__name">Назание товара</span>
-                <figcaption class="products__discription">Описание товара</figcaption>
+                <span class="products__name">HOT WHEELS</span>
+                <figcaption class="products__discription products__discription_sale">35 000 р.</figcaption>
+                <form>
+                    <button class="products__add">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/shopping_cart.svg#cart"></use>
+                        </svg>
+                        в корзину
+                    </button>
+                    <button class="products__add products__add_flash">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/lightning.svg#lightning"></use>
+                        </svg>
+                    </button>
+                </form>
             </figure>
             <figure class="products">
-            <img src="desing/image/car.png" alt="Фото товара" class="products__img">
-            <span class="products__name">Назание товара</span>
-            <figcaption class="products__discription">Описание товара</figcaption>
-        </figure>
-            <figure class="products">
+                <span class="products__sale products__sale_percent">10%</span>
                 <img src="desing/image/car.png" alt="Фото товара" class="products__img">
-                <span class="products__name">Назание товара</span>
-                <figcaption class="products__discription">Описание товара</figcaption>
+                <span class="products__name">HOT WHEELS</span>
+                <figcaption class="products__discription products__discription_sale">35 000 р.</figcaption>
+                <form>
+                    <button class="products__add">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/shopping_cart.svg#cart"></use>
+                        </svg>
+                        в корзину
+                    </button>
+                    <button class="products__add products__add_flash">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/lightning.svg#lightning"></use>
+                        </svg>
+                    </button>
+                </form>
             </figure>
             <figure class="products">
+                <span class="products__sale products__sale_percent">10%</span>
                 <img src="desing/image/car.png" alt="Фото товара" class="products__img">
-                <span class="products__name">Назание товара</span>
-                <figcaption class="products__discription">Описание товара</figcaption>
+                <span class="products__name">HOT WHEELS</span>
+                <figcaption class="products__discription products__discription_sale">35 000 р.</figcaption>
+                <form>
+                    <button class="products__add">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/shopping_cart.svg#cart"></use>
+                        </svg>
+                        в корзину
+                    </button>
+                    <button class="products__add products__add_flash">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/lightning.svg#lightning"></use>
+                        </svg>
+                    </button>
+                </form>
+            </figure>
+            <figure class="products">
+                <span class="products__sale products__sale_percent">10%</span>
+                <img src="desing/image/car.png" alt="Фото товара" class="products__img">
+                <span class="products__name">HOT WHEELS</span>
+                <figcaption class="products__discription products__discription_sale">35 000 р.</figcaption>
+                <form>
+                    <button class="products__add">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/shopping_cart.svg#cart"></use>
+                        </svg>
+                        в корзину
+                    </button>
+                    <button class="products__add products__add_flash">
+                        <svg class="inline-icon">
+                            <use xlink:href="desing/icons/lightning.svg#lightning"></use>
+                        </svg>
+                    </button>
+                </form>
             </figure>
         </section>
     </main>
     <aside class="category">
         <h2 class="category__headline">Категории</h2>
         <ul class="ul__category">
-            <li class="category__item"><a href="#" class="category__link">Ауди</a></li>
-            <li class="category__item"><a href="#" class="category__link">Пежо</a></li>
-            <li class="category__item"><a href="#" class="category__link">Рено</a></li>
-            <li class="category__item"><a href="#" class="category__link">Опель</a></li>
-            <li class="category__item"><a href="#" class="category__link">Порше</a></li>
-            <li class="category__item"><a href="#" class="category__link">БМВ</a></li>
-            <li class="category__item"><a href="#" class="category__link">Мерседес</a></li>
-            <li class="category__item"><a href="#" class="category__link">Форд</a></li>
+            <li class="category__item">
+                <a href="#" class="category__link">
+                    <svg class="inline-icon category__img">
+                        <use xlink:href="desing/icons/sidebar/audi.svg#audi"/>
+                    </svg>
+                    Ауди
+                </a>
+            </li>
+            <li class="category__item">
+                <a href="#" class="category__link">
+                    <svg class="inline-icon category__img">
+                        <use xlink:href="desing/icons/sidebar/pegeot.svg#pegeot"/>
+                    </svg>
+                    Пежо
+                </a>
+            </li>
+            <li class="category__item">
+                <a href="#" class="category__link">
+                    <svg class="inline-icon category__img">
+                        <use xlink:href="desing/icons/sidebar/renault.svg#renault"/>
+                    </svg>
+                    Рено
+                </a>
+            </li>
+            <li class="category__item">
+                <a href="#" class="category__link">
+                    <svg class="inline-icon category__img">
+                        <use xlink:href="desing/icons/sidebar/opel.svg#opel"/>
+                    </svg>
+                    Опель
+                </a>
+            </li>
+            <li class="category__item">
+                <a href="#" class="category__link">
+                    <svg class="inline-icon category__img">
+                        <use xlink:href="desing/icons/sidebar/porche.svg#porche"/>
+                    </svg>
+                    Порше
+                </a>
+            </li>
+            <li class="category__item">
+                <a href="#" class="category__link">
+                    <svg class="inline-icon category__img">
+                        <use xlink:href="desing/icons/sidebar/bmw.svg#bmw"/>
+                    </svg>
+                    БМВ
+                </a>
+            </li>
+            <li class="category__item">
+                <a href="#" class="category__link">
+                    <svg class="inline-icon category__img">
+                        <use xlink:href="desing/icons/sidebar/mercedes.svg#mercedes"/>
+                    </svg>
+                    Мерседес
+                </a>
+            </li>
+            <li class="category__item">
+                <a href="#" class="category__link">
+                    <svg class="inline-icon category__img">
+                        <use xlink:href="desing/icons/sidebar/corvette.svg#corvete"/>
+                    </svg>
+                    Корвет
+                </a>
+            </li>
         </ul>
         <img src="desing/image/banner.jpg" alt="Реклама" class="banner">
         <img src="desing/image/banner2.jpg" alt="Реклама" class="banner">
     </aside>
     </div>
+
     <footer class="footer">
-        <img src="#" alt="Логотип для футера" class="footer__logo">
-        <div class="footer-div1">Меню</div>
-        <ul>
-            <li class="footer-div1__item"><a href="#" class="footer-div1__link">Главная</a></li>
-            <li class="footer-div1__item"><a href="#" class="footer-div1__link">Каталог</a></li>
-            <li class="footer-div1__item"><a href="#" class="footer-div1__link">Галерея</a></li>
-            <li class="footer-div1__item"><a href="#" class="footer-div1__link">Акции</a></li>
-            <li class="footer-div1__item"><a href="#" class="footer-div1__link">Контакты</a></li>
-        </ul>
-        <div class="footer-div2">Способы оплаты</div>
-        <ul>
-            <li class="footer-div2__item"><a href="#" class="footer-div__link">Наличными</a></li>
-            <li class="footer-div2__item"><a href="#" class="footer-div__link">Visa или Mastercard</a></li>
-            <li class="footer-div2__item"><a href="#" class="footer-div__link">В кредит</a></li>
-        </ul>
-        <div class="footer-div3">Контактная информация</div>
-            <address>
-                <p class="footer-div3__adress1">Телефон: <a href="tel:+88006845594" class="footer-div3__link1">8 800 684 55 94</a></p>
-                <p class="footer-div3__adress2">Электронная почта: <a href="mailto:info@gmail.com" class="footer-div3__link2">info@gmail.com</a></p>
-                <p class="footer-div3__adress3">Адрес: г.Москва ул.Фантастическаая 35</p>
-            </address>
-        <div class="copyright">
-            <p class="copyright__paragraph">&copy; tachki.com</p>
+        <div class="container contain contain_footer">
+        <a href="#" class="footer__link">
+            <svg class="inline-icon footer__img">
+                <use xlink:href="desing/image/car.svg#car"></use>
+            </svg>
+            <span class="foter__site-name"><p class="header-logo__first-row header-logo__first-row_color ">TACHKI.COM</p> unrealizable dreams</span>
+        </a>
+        <div class="footer-block footer-block_position1">
+            <div class="footer-div">Меню</div>
+            <ul class="footer__ul">
+                <li class="footer-div__item"><a href="#" class="footer-div__link">Главная</a></li>
+                <li class="footer-div__item"><a href="#" class="footer-div__link">Каталог</a></li>
+                <li class="footer-div__item"><a href="#" class="footer-div__link">Галерея</a></li>
+                <li class="footer-div__item"><a href="#" class="footer-div__link">Акции</a></li>
+                <li class="footer-div__item"><a href="#" class="footer-div__link">Контакты</a></li>
+            </ul>
         </div>
-        
+        <div class="footer-block footer-block_position2">
+            <div class="footer-div">Способы оплаты</div>
+            <ul class="footer__ul">
+                <li class="footer-div__item"><a href="#" class="footer-div__link">Наличными</a></li>
+                <li class="footer-div__item"><a href="#" class="footer-div__link">Visa или Mastercard</a></li>
+                <li class="footer-div__item"><a href="#" class="footer-div__link">В кредит</a></li>
+            </ul>
+        </div>
+        <div class="footer-block footer-block_position3">
+        <div class="footer-div">Контактная информация</div>
+            <address class="address">
+                <p class="footer-div__adress">Телефон: <a href="tel:+88006845594" class="footer-div__link">8 800 684 55 94</a></p>
+                <p class="footer-div__adress">Электронная почта: <a href="mailto:info@gmail.com" class="footer-div__link">info@gmail.com</a></p>
+                <p class="footer-div__adress">Адрес: г.Москва ул.Фантастическая 35</p>
+            </address>
+        </div>
+
     </footer>
+    <div class="copyright">
+        <p class="copyright__paragraph">&copy; tachki.com</p>
+    </div>
+    </div>
 </body>
 </html>
